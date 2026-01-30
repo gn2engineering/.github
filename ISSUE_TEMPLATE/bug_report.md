@@ -24,6 +24,18 @@ What actually happens? Include exact error messages and stack traces.
 2. 
 3. 
 
+## Environment
+
+- OS:
+- Python: 3.12.x
+
+## Logs (if present)
+
+```text
+
+```
+
+
 ## Minimal Repro (if possible)
 
 Provide the smallest code/config snippet that reproduces the issue.
