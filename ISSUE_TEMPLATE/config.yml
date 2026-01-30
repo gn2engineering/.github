@@ -6,3 +6,6 @@ contact_links:
   - name: Questions / Discussion
     url: https://github.com/orgs/gn2engineering/discussions
     about: Ask a question or start a design discussion.
+  - name: Not sure which bug report to use?
+    url: https://github.com/orgs/gn2engineering/discussions
+    about: Start a discussion and we’ll help you classify it.
