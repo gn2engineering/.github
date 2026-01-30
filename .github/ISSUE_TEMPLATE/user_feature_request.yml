@@ -4,7 +4,7 @@ title: "Feature request: "
 labels:
   - enhancement
   - user-request
-  - type:feature
+  - type: Feature
 
 body:
   - type: dropdown
