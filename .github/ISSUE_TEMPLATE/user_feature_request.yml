@@ -4,22 +4,29 @@ title: "Feature request: "
 labels:
   - enhancement
   - user-request
-  - type:feature
+  - type: Feature
 
 body:
-  - type: markdown
+  - type: dropdown
+    id: issue_type
     attributes:
-      value: |
-        **Issue type:** Feature
+      label: Issue type
+      description: What kind of request is this?
+      options:
+        - Feature request (new capability)
+        - Improvement (make something better)
+        - UI/UX change
+        - Documentation / guidance
+        - Other
+    validations:
+      required: true
 
   - type: textarea
     id: goal
     attributes:
       label: What are you trying to do?
-      description: |
-        Describe the goal or task you are trying to accomplish.
-        Focus on what you want to achieve, not how it should be implemented.
-      placeholder: "I want to be able to..."
+      description: Describe the goal or task you are trying to accomplish. Focus on what you want to achieve, not how it should be implemented.
+      placeholder: "I want to be able to…"
     validations:
       required: true
 
@@ -27,10 +34,8 @@ body:
     id: problem
     attributes:
       label: What problem are you running into?
-      description: |
-        Explain what is currently difficult, confusing, slow, or impossible.
-        If something is frustrating, describe why.
-      placeholder: "Right now it's hard because..."
+      description: Explain what is currently difficult, confusing, slow, or impossible. If something is frustrating, describe why.
+      placeholder: "Right now it’s hard because…"
     validations:
       required: true
 
@@ -38,15 +43,13 @@ body:
     id: success
     attributes:
       label: What would a good solution look like to you?
-      description: |
-        In your own words, describe what success looks like.
-        This can be a behavior, outcome, or experience — not technical details.
-      placeholder: "It would be great if..."
+      description: In your own words, describe what success looks like (behavior/outcome/experience — not technical details).
+      placeholder: "It would be great if…"
     validations:
       required: true
 
   - type: dropdown
-    id: who
+    id: who_helped
     attributes:
       label: Who would this help?
       options:
@@ -69,15 +72,10 @@ body:
       required: true
 
   - type: textarea
-    id: context
+    id: additional_context
     attributes:
       label: Additional context (optional)
-      description: |
-        Include anything else that may help:
-        - Screenshots
-        - Examples
-        - Links
-        - Current workarounds
-      placeholder: "Add links, screenshots, examples, or workarounds..."
+      description: Include anything else that may help (screenshots, examples, links, current workarounds).
+      placeholder: "Links, screenshots, examples, workarounds…"
     validations:
       required: false
