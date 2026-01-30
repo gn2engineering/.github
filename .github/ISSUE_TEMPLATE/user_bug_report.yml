@@ -1,0 +1,98 @@
+name: Bug report (user-facing)
+description: Report something that is not working as expected
+title: "Bug: "
+labels:
+  - bug
+  - user-report
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Please describe what you experienced in plain language.
+        You do not need to include technical details—screenshots and examples are helpful if you have them.
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: What were you trying to do?
+      description: Describe the task or goal you were working on.
+      placeholder: "Example: I was trying to export a PDF from the drawing set..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_went_wrong
+    attributes:
+      label: What went wrong?
+      description: Explain what happened instead of what you expected. Error messages are helpful, but not required.
+      placeholder: "Example: The export finished, but the PDF was blank..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      description: Describe the result you thought you would get.
+      placeholder: "Example: A PDF with all pages rendered correctly..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does this happen?
+      options:
+        - Every time
+        - Sometimes
+        - Only once so far
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: started
+    attributes:
+      label: When did this start?
+      options:
+        - Just now
+        - Recently
+        - I’ve seen this before but can’t remember when
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps you remember (if any)
+      description: If you remember roughly what you did before it happened, list it here. It’s okay if this is incomplete.
+      placeholder: |
+        1. Opened the project
+        2. Clicked "Export"
+        3. Selected PDF
+    validations:
+      required: false
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: How much does this affect your work?
+      options:
+        - Minor inconvenience
+        - Slows me down
+        - Blocks my work completely
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context (optional)
+      description: Include anything else that might help—screenshots, logs, files, links, or workarounds you tried.
+      placeholder: "Add screenshots, links, or any other details here..."
+    validations:
+      required: false
